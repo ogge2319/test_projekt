@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll, afterEach } from 'vitest';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import MovieList from '../src/components/MovieList';
-import { server } from '../mocks/server';
+import MovieList from '../components/MovieList';
+import { server } from '../../mocks/server';
 
 // Starta mock-servern innan testerna körs
 beforeAll(() => server.listen());
