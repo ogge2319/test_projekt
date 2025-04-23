@@ -19,8 +19,8 @@ describe('MovieList', () => {
 
     // Vänta tills filmerna dyker upp i DOM
     await waitFor(() => {
-      expect(screen.getByText('The Matrix')).toBeDefined();
-      expect(screen.getByText('Inception')).toBeDefined();
+      expect(screen.getByText('The Matrix')).toBeInTheDocument();
+      expect(screen.getByText('Inception')).toBeInTheDocument();
     });
   });
 });
