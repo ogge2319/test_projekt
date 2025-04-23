@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Counter from '../src/components/Counter';
+import Counter from '../components/Counter';
 
 describe('Counter', () => {
   it('visar 0 från början', () => {
